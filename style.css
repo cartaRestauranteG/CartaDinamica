@@ -1,0 +1,129 @@
+:root {
+    --dark-bg: #1a1a1a;
+    --primary-text: #f0f0f0;
+    --secondary-text: #a0a0a0;
+    --accent-color: #c0392b;
+    --container-bg: #2c2c2c;
+    --border-color: #444;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--dark-bg);
+    color: var(--primary-text);
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 2rem 1rem;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+header h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--accent-color);
+}
+
+header p {
+    font-size: 1.2rem;
+    color: var(--secondary-text);
+}
+
+.menu-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+section h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.2rem;
+    color: var(--primary-text);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.menu-item {
+    background-color: var(--container-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.menu-item:hover {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 15px rgba(192, 57, 43, 0.3);
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+}
+
+.menu-item.non-expandable .item-header {
+    cursor: default;
+}
+
+.item-header h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+.item-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    padding: 0 1.5rem;
+}
+
+.menu-item.active .item-details {
+    max-height: 500px; /* Suficientemente grande para el contenido */
+    padding-bottom: 1.5rem;
+}
+
+.item-details img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.item-details p {
+    color: var(--secondary-text);
+    font-size: 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+    border-top: 1px solid var(--border-color);
+    color: var(--secondary-text);
+}
