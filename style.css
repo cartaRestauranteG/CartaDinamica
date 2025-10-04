@@ -40,7 +40,7 @@ header p {
 }
 
 .menu-container {
-    max-width: 800px;
+    max-width: 900px;
     margin: 2rem auto;
     padding: 0 1rem;
     display: grid;
@@ -160,4 +160,21 @@ footer {
     margin-top: 2rem;
     border-top: 1px solid var(--border-color);
     color: var(--secondary-text);
+}
+
+.item-name-allergens {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.allergen-icons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.allergen-icons img {
+    width: 24px;
+    height: 24px;
+    transform: translateY(3px);
 }
