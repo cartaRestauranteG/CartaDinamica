@@ -73,7 +73,7 @@ section > * {
     z-index: 2;
 }
 
-section#hamburguesas { background-image: url('burguer.jpg'); }
+section#hamburguesas { background-image: url('clasica.png'); }
 section#carnes { background-image: url('asado.jpg'); }
 section#postres { background-image: url('tarta_chocolate.jpg'); }
 section#bebidas {
